@@ -1,0 +1,26 @@
+name: RoI pooling
+description: RoI pooling in TensorFlow - example
+project-key: SAN
+parameters:
+  - name: roidb
+    description: absolute path to roidb folder
+    type: string
+    required: true
+  - name: im_folder
+    description: absolute path to image folder
+    type: string
+    required: true
+  - name: pretrained_path
+    description: path to pretrained imagenet model
+    type: string
+    required: true
+  - name: num_epochs
+    description: number of epochs
+    type: double
+    required: false
+    default: 100
+  - name: learning_rate
+    description: learning rate
+    type: double
+    default: 1e-04
+    required: false
